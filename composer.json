@@ -1,0 +1,29 @@
+{
+    "name": "flekto/postcode",
+    "description": "Postcode.nl international API module for Magento 2",
+    "require": {
+      "php": "7.*|~7.0.6"
+    },
+    "type": "magento2-module",
+    "version": "0.1",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Flekto/Postcode"
+            ]
+        ]
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Flekto\\Postcode\\": "",
+            "PostcodeNl\\InternationalAutocomplete\\": "app/code/Flekto/Postcode/lib/InternationalAutocomplete/"
+        }
+    }
+
+}
